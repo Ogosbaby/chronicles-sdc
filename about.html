@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us | Chronicles SDC</title>
+  <meta name="description"
+    content="Meet the management and engineering team behind Chronicles Software Development Company in Ikeja GRA, Lagos." />
+  <link rel="icon" type="image/png" href="images/logo.png" />
+
+  <!-- Google Fonts: Outfit (Display & Headings), Plus Jakarta Sans (Body & UI), Caveat (Handwritten) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap"
+    rel="stylesheet" />
+
+  <!-- Pure CSS Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Schema.org Structured Data (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Chronicles Software Development Company",
+    "alternateName": "Chronicles SDC",
+    "url": "https://chroniclessoft.com",
+    "logo": "https://chroniclessoft.com/images/logo.png",
+    "description": "Africa's premier educational technology and software engineering company, makers of SuccessTAB, SuccessBox, ClassBeam, and AI Academy.",
+    "foundingLocation": "Lagos, Nigeria",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "19, Joel Ogunnaike Street, Ikeja GRA",
+      "addressLocality": "Ikeja",
+      "addressRegion": "Lagos",
+      "addressCountry": "NG"
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+234-803-769-9362",
+      "contactType": "customer support",
+      "email": "solutions@chroniclessoft.com",
+      "availableLanguage": ["English"]
+    },
+    "sameAs": [
+      "https://successbox.net",
+      "https://successtabs.com",
+      "https://classbeam.com",
+      "https://aiacademy.ng"
+    ]
+  }
+  </script>
+
+</head>
+
+<body>
+
+  <!-- SVG Doodle Library -->
+  <svg width="0" height="0" style="position:absolute; display:none;" aria-hidden="true">
+    <defs>
+      <!-- Double Handwritten Arrow matching user's uploaded reference image -->
+      <g id="doodle-double-arrow">
+        <path d="M 12 44 C 13 32, 17 20, 26 9" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round"
+          stroke-linejoin="round" />
+        <path d="M 13 18 L 26 8 L 35 19" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round"
+          stroke-linejoin="round" />
+        <path d="M 18 36 C 26 35, 36 31, 46 25" fill="none" stroke="currentColor" stroke-width="5"
+          stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M 37 19 L 47 24 L 39 33" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round"
+          stroke-linejoin="round" />
+      </g>
+      <g id="doodle-star">
+        <path d="M 24 4 C 24 16, 26 24, 38 24 C 26 24, 24 32, 24 44 C 24 32, 22 24, 10 24 C 22 24, 24 16, 24 4 Z"
+          fill="currentColor" />
+      </g>
+      <g id="doodle-bulb">
+        <path
+          d="M 18 34 C 14 29, 11 23, 11 16 C 11 7, 18 2, 27 2 C 36 2, 43 7, 43 16 C 43 23, 40 29, 36 34 L 36 40 L 18 40 Z"
+          fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M 20 44 L 34 44 M 23 48 L 31 48" fill="none" stroke="currentColor" stroke-width="3.5"
+          stroke-linecap="round" />
+        <path d="M 27 12 L 27 24 M 22 18 L 32 18" fill="none" stroke="currentColor" stroke-width="2.5"
+          stroke-linecap="round" />
+      </g>
+      <g id="icon-book">
+        <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" fill="none" stroke="currentColor"
+          stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+      </g>
+    </defs>
+  </svg>
+
+  <!-- ==========================================================================
+       SITE HEADER / NAVBAR
+       ========================================================================== -->
+  <header class="site-header">
+    <div class="container">
+      <div class="header-inner">
+        <a href="index.html" class="brand-logo-link" aria-label="Chronicles Software Development Company Home">
+          <img src="images/logo.png" alt="Chronicles Software Development Company" class="brand-logo-img" />
+        </a>
+
+        <nav class="main-nav" aria-label="Main Navigation">
+          <a href="index.html" class="nav-link">Home</a>
+
+          <!-- Products Mega Dropdown (Exact NVIDIA Sidebar Layout) -->
+          <div class="nav-item-dropdown" id="productsDropdownWrap">
+            <a href="/products" class="nav-link nav-dropdown-btn" id="btnProductsDropdown" role="button" aria-expanded="false" aria-haspopup="true">
+              Products
+              <svg class="nav-chevron" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </a>
+            <div class="products-mega-menu" id="productsMegaMenu" role="menu" aria-label="Products Menu">
+              <div class="mega-menu-container">
+
+                <!-- Left Sidebar Categories (NVIDIA Exact Layout) -->
+                <nav class="mega-sidebar" aria-label="Product Categories">
+                  <button type="button" class="mega-sidebar-btn active" data-tab="tab-software">
+                    Software
+                  </button>
+                  <button type="button" class="mega-sidebar-btn" data-tab="tab-hardware">
+                    Hardware
+                  </button>
+                  <button type="button" class="mega-sidebar-btn" data-tab="tab-academy">
+                    Academy
+                  </button>
+                  <button type="button" class="mega-sidebar-btn" data-tab="tab-enterprise">
+                    Enterprise Solutions
+                  </button>
+                </nav>
+
+                <!-- Right Content Area (2-Column Grid as in Screenshot) -->
+                <div class="mega-content-area">
+
+                  <!-- 1. SOFTWARE PANEL -->
+                  <div class="mega-tab-panel active" id="tab-software">
+                    <h3 class="mega-panel-title">Software</h3>
+                    <div class="mega-product-grid">
+                      <a href="https://successbox.net" target="_blank" rel="noopener noreferrer" class="mega-product-card">
+                        <div class="mega-product-card-title">
+                          <span>SuccessBox</span>
+                          <svg class="product-arrow" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                        </div>
+                        <p class="mega-product-card-desc">50,000+ past questions &amp; mock exam engine for WAEC, JAMB &amp; BECE candidates</p>
+                      </a>
+
+                      <a href="https://igcsemasterprep.com" target="_blank" rel="noopener noreferrer" class="mega-product-card">
+                        <div class="mega-product-card-title">
+                          <span>IGCSE Master Prep</span>
+                          <svg class="product-arrow" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                        </div>
+                        <p class="mega-product-card-desc">Cambridge curriculum practice, mock tests, and diagnostic analytics</p>
+                      </a>
+
+                      <a href="https://ekotestcentre.com" target="_blank" rel="noopener noreferrer" class="mega-product-card">
+                        <div class="mega-product-card-title">
+                          <span>Eko Test Centre</span>
+                          <svg class="product-arrow" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                        </div>
+                        <p class="mega-product-card-desc">WAEC outcome predictive modeling and secondary school assessment engine</p>
+                      </a>
+
+                      <a href="https://successbox.net/enterprise" target="_blank" rel="noopener noreferrer" class="mega-product-card">
+                        <div class="mega-product-card-title">
+                          <span>SuccessBox Enterprise</span>
+                          <svg class="product-arrow" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                        </div>
+                        <p class="mega-product-card-desc">All-in-one school learning platform, digital syllabus bank, and teacher LMS</p>
+                      </a>
+                    </div>
+                  </div>
+
+                  <!-- 2. HARDWARE PANEL -->
+                  <div class="mega-tab-panel" id="tab-hardware">
+                    <h3 class="mega-panel-title">Hardware</h3>
+                    <div class="mega-product-grid">
+                      <a href="https://successtabs.com" target="_blank" rel="noopener noreferrer" class="mega-product-card">
+                        <div class="mega-product-card-title">
+                          <span>SuccessTAB</span>
+                          <svg class="product-arrow" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                        </div>
+                        <p class="mega-product-card-desc">100% offline educational tablet preloaded with NERDC textbooks and video lessons</p>
+                      </a>
+
+                      <a href="https://classbeam.com" target="_blank" rel="noopener noreferrer" class="mega-product-card">
+                        <div class="mega-product-card-title">
+                          <span>ClassBeam</span>
+                          <svg class="product-arrow" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                        </div>
+                        <p class="mega-product-card-desc">Smart interactive classroom projector for dynamic multimedia collaboration</p>
+                      </a>
+                    </div>
+                  </div>
+
+                  <!-- 3. ACADEMY PANEL -->
+                  <div class="mega-tab-panel" id="tab-academy">
+                    <h3 class="mega-panel-title">Academy</h3>
+                    <div class="mega-product-grid">
+                      <a href="https://aiacademy.ng" target="_blank" rel="noopener noreferrer" class="mega-product-card">
+                        <div class="mega-product-card-title">
+                          <span>AI Academy</span>
+                          <svg class="product-arrow" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                        </div>
+                        <p class="mega-product-card-desc">Applied AI literacy, Python programming, and robotics labs for students</p>
+                      </a>
+
+                      <a href="https://educatorstechacademy.com" target="_blank" rel="noopener noreferrer" class="mega-product-card">
+                        <div class="mega-product-card-title">
+                          <span>Educators Tech Academy</span>
+                          <svg class="product-arrow" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                        </div>
+                        <p class="mega-product-card-desc">Digital pedagogy, modern classroom tech certification, and teacher upskilling</p>
+                      </a>
+                    </div>
+                  </div>
+
+                  <!-- 4. ENTERPRISE PANEL -->
+                  <div class="mega-tab-panel" id="tab-enterprise">
+                    <h3 class="mega-panel-title">Enterprise Solutions</h3>
+                    <div class="mega-product-grid">
+                      <a href="about.html" class="mega-product-card">
+                        <div class="mega-product-card-title">
+                          <span>Custom Software Engineering</span>
+                          <svg class="product-arrow" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                        </div>
+                        <p class="mega-product-card-desc">Bespoke web, mobile, and cloud platforms engineered for growing organizations</p>
+                      </a>
+
+                      <a href="contact.html" class="mega-product-card">
+                        <div class="mega-product-card-title">
+                          <span>School CBT Center Setup</span>
+                          <svg class="product-arrow" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                        </div>
+                        <p class="mega-product-card-desc">Turnkey digital examination infrastructure, local servers, and test lab deployment</p>
+                      </a>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <a href="about.html" class="nav-link active" aria-current="page">About Us</a>
+        </nav>
+
+                <!-- Header Actions: Search Button, Contact Link & Direct Explore Link -->
+        <div class="header-actions">
+          <!-- Search Icon Button -->
+          <button type="button" class="nav-search-btn" id="btnSiteSearch" aria-label="Search website" title="Search website (Ctrl + K)">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+            <span class="search-kbd-hint"><kbd>⌘</kbd><kbd>K</kbd></span>
+          </button>
+
+          <!-- Contact Link (Replaces Support dropdown) -->
+          <a href="contact.html" class="nav-contact-link">Contact</a>
+
+          <!-- Explore Button (Direct link to Our Products section, no chevron) -->
+          <a href="index.html#flagship-products" class="btn btn-primary btn-explore-nav">Explore</a>
+
+          <!-- Mobile Toggle Hamburger -->
+          <button id="mobileNavToggle" class="mobile-nav-toggle" aria-label="Toggle Navigation Menu">
+            <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div id="mobileNavMenu" class="mobile-nav-menu">
+      <a href="index.html" class="mobile-nav-link">Home</a>
+      <button class="mobile-dropdown-btn" id="mobileProductsToggle" aria-expanded="false">
+        <span>Products</span>
+        <svg class="nav-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+      </button>
+      <div class="mobile-mega-panel" id="mobileMegaPanel">
+        <div class="mobile-mega-cat">Software</div>
+        <a href="https://successbox.net" target="_blank" rel="noopener noreferrer" class="mobile-mega-link">SuccessBox (Exam Prep) ↗</a>
+        <a href="https://igcsemasterprep.com" target="_blank" rel="noopener noreferrer" class="mobile-mega-link">IGCSE Master Prep ↗</a>
+        <a href="https://ekotestcentre.com" target="_blank" rel="noopener noreferrer" class="mobile-mega-link">Eko Test Centre ↗</a>
+        <a href="https://successbox.net/enterprise" target="_blank" rel="noopener noreferrer" class="mobile-mega-link">SuccessBox Enterprise ↗</a>
+        <div class="mobile-mega-cat">Hardware</div>
+        <a href="https://successtabs.com" target="_blank" rel="noopener noreferrer" class="mobile-mega-link">SuccessTAB (Offline Tablet) ↗</a>
+        <a href="https://classbeam.com" target="_blank" rel="noopener noreferrer" class="mobile-mega-link">ClassBeam (Projector) ↗</a>
+        <div class="mobile-mega-cat">Academy</div>
+        <a href="https://aiacademy.ng" target="_blank" rel="noopener noreferrer" class="mobile-mega-link">AI Academy ↗</a>
+        <a href="https://educatorstechacademy.com" target="_blank" rel="noopener noreferrer" class="mobile-mega-link">Educators Tech Academy ↗</a>
+      </div>
+      <a href="about.html" class="mobile-nav-link active">About Us</a>
+      <a href="contact.html" class="mobile-nav-link">Contact</a>
+      <a href="index.html#flagship-products" class="mobile-nav-link">Explore Products</a>
+    </div>
+  </header>
+
+  <!-- Dropdown Dimmed Background Backdrop -->
+  <div id="dropdownBackdrop" class="dropdown-backdrop" aria-hidden="true"></div>
+
+  <main>
+    <!-- ==========================================================================
+         PAGE HERO (CURVED)
+         ========================================================================== -->
+    <section class="curved-page-hero">
+      <div class="doodle-box" style="top: 35px; left: 9%; color: var(--color-marker-yellow);">
+        <svg width="34" height="34" viewBox="0 0 48 48">
+          <use href="#doodle-star" />
+        </svg>
+      </div>
+      <div class="doodle-box" style="top: 30px; right: 11%; color: var(--color-cobalt);">
+        <svg width="36" height="36" viewBox="0 0 48 48">
+          <use href="#doodle-bulb" />
+        </svg>
+      </div>
+
+      <div class="container" style="max-width: 52rem;">
+        <h1 class="hero-title">
+          Meet our team of creators<br />
+          and world-class <span class="typed-purple-wrap"><span class="purple-typed-word" id="aboutTypedPurple"
+              data-typewriter-words='["problem solvers", "talents", "innovators", "engineers", "builders"]'>problem
+              solvers</span><span class="purple-cursor">|</span></span>
+        </h1>
+        <p style="font-size: 1.15rem; color: var(--color-text-slate); line-height: 1.7; margin-bottom: 1.5rem">
+          People who care passionately about better exam grades, dependable software engineering, and digital learning
+          tools that reach every Nigerian student.
+        </p>
+
+        <!-- Handwritten Annotation -->
+        <div style="display: inline-flex; align-items: center; gap: 0.75rem;">
+        </div>
+      </div>
+    </section>
+
+        <!-- ==========================================================================
+         OUR STORY SECTION
+         ========================================================================== -->
+    <section class="section section-light" id="story">
+      <div class="container">
+
+        <!-- Story + Stats grid -->
+        <div class="about-story-two-col">
+          <!-- Left: Story Text -->
+          <div class="about-story-text">
+            <span class="section-eyebrow">Our Story</span>
+            <h2 class="about-story-heading">About Us</h2>
+            <p class="about-story-para">
+              Over the years, we have continued to surpass our clients&#x2019; expectations and deliver value in all projects assigned to us.
+            </p>
+            <p class="about-story-para">
+              Chronicles Software Development Company Limited has a track record for excellent service delivery and
+              innovative product design, with a rich history of <strong>over fifteen years in the industry.</strong>
+            </p>
+            <p class="about-story-para mb0">
+              With over <strong>2.5M users</strong> since inception, across 40 countries and 4 continents,
+              Chronicles is fast becoming a global company &#x2014; our goal of becoming Africa&#x2019;s finest solution company is very much on track.
+            </p>
+          </div>
+
+          <!-- Right: Stat Cards -->
+          <div class="about-stat-cards">
+            <div class="about-stat-card blue">
+              <div class="about-stat-number">15+</div>
+              <div class="about-stat-label">Years in Business</div>
+            </div>
+            <div class="about-stat-card green">
+              <div class="about-stat-number">2.5M+</div>
+              <div class="about-stat-label">Users Reached</div>
+            </div>
+            <div class="about-stat-card orange">
+              <div class="about-stat-number">40</div>
+              <div class="about-stat-label">Countries</div>
+            </div>
+            <div class="about-stat-card purple">
+              <div class="about-stat-number">4</div>
+              <div class="about-stat-label">Continents</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3 Core Pillars -->
+        <div class="about-pillars-grid">
+          <div class="pillar-card">
+            <div class="pillar-image-box">
+              <img src="images/about-vision.png" alt="Chronicles SDC Vision - Strength and Innovation"
+                class="pillar-image" loading="lazy" />
+            </div>
+            <h3 style="font-size: 1.25rem; font-weight: 800; color: var(--color-navy); margin-bottom: 0.65rem;">
+              Vision
+            </h3>
+            <p style="font-size: 0.95rem; color: var(--color-text-slate); line-height: 1.6;">
+              To build a world class solution company employing industry&#x2019;s best practices to offering solutions to
+              clients and creating wealth for stakeholders.
+            </p>
+          </div>
+
+          <div class="pillar-card">
+            <div class="pillar-image-box">
+              <img src="images/about-mission.png" alt="Chronicles SDC Mission - Software Solutions Delivery"
+                class="pillar-image" loading="lazy" />
+            </div>
+            <h3 style="font-size: 1.25rem; font-weight: 800; color: var(--color-navy); margin-bottom: 0.65rem;">
+              Mission
+            </h3>
+            <p style="font-size: 0.95rem; color: var(--color-text-slate); line-height: 1.6;">
+              To deliver value by providing innovative software solutions without compromising quality for people
+              everywhere.
+            </p>
+          </div>
+
+          <div class="pillar-card">
+            <div class="pillar-image-box">
+              <img src="images/about-ideology.png" alt="Chronicles SDC Corporate Ideology - Customer Satisfaction and Support"
+                class="pillar-image" loading="lazy" />
+            </div>
+            <h3 style="font-size: 1.25rem; font-weight: 800; color: var(--color-navy); margin-bottom: 0.65rem;">
+              Corporate Ideology
+            </h3>
+            <p style="font-size: 0.95rem; color: var(--color-text-slate); line-height: 1.6;">
+              To maximize Customer satisfaction, we insist on detailed after sales support services to all our valued
+              customers.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         EXECUTIVE MANAGEMENT TEAM
+         ========================================================================== -->
+    <section class="section section-tint" id="team">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Leadership</span>
+          <h2 class="section-title">Management Team</h2>
+          <div class="section-divider"></div>
+          <p class="section-desc">Guided by veteran educators and technologists passionate about building solutions that
+            last.</p>
+        </div>
+
+        <div class="team-grid">
+          <!-- Member 1 -->
+          <div class="team-card">
+            <div class="team-avatar-wrap">
+              <svg viewBox="0 0 120 120">
+                <circle cx="60" cy="60" r="56" fill="#BAE6FD" />
+                <ellipse cx="60" cy="54" rx="20" ry="23" fill="#3B2219" />
+                <path d="M40 40c1-10 9-14 20-14s19 4 20 14" fill="#140D0A" />
+                <circle cx="52" cy="52" r="2.5" fill="#fff" />
+                <circle cx="68" cy="52" r="2.5" fill="#fff" />
+                <circle cx="52" cy="52" r="1.3" fill="#000" />
+                <circle cx="68" cy="52" r="1.3" fill="#000" />
+                <path d="M53 65q7 5 14 0" stroke="#fff" stroke-width="2.5" fill="none" stroke-linecap="round" />
+                <path d="M22 110c0-20 16-30 38-30s38 10 38 30z" fill="#1B1464" />
+              </svg>
+            </div>
+            <h3 class="team-name">Oluwakoyejo Oluwatosin</h3>
+            <span class="team-role">CEO / Managing Director</span>
+          </div>
+
+          <!-- Member 2 -->
+          <div class="team-card">
+            <div class="team-avatar-wrap">
+              <svg viewBox="0 0 120 120">
+                <circle cx="60" cy="60" r="56" fill="#FDE047" />
+                <path d="M34 44c-2-12 6-24 20-26 4-6 14-8 20-2 10 2 16 12 12 28-4-8-10-12-16-12H50c-8 0-13 4-16 12z"
+                  fill="#FDE047" />
+                <path d="M40 28c8-6 18-6 26 0" stroke="#F59E0B" stroke-width="2.5" fill="none" />
+                <ellipse cx="60" cy="54" rx="20" ry="23" fill="#6F4530" />
+                <circle cx="52" cy="52" r="2.5" fill="#fff" />
+                <circle cx="68" cy="52" r="2.5" fill="#fff" />
+                <path d="M53 65q7 5 14 0" stroke="#fff" stroke-width="2.5" fill="none" stroke-linecap="round" />
+                <path d="M22 110c0-20 16-30 38-30s38 10 38 30z" fill="#2563EB" />
+              </svg>
+            </div>
+            <h3 class="team-name">Adekunbi Ogunsola</h3>
+            <span class="team-role">Executive Director</span>
+          </div>
+
+          <!-- Member 3 -->
+          <div class="team-card">
+            <div class="team-avatar-wrap">
+              <svg viewBox="0 0 120 120">
+                <circle cx="60" cy="60" r="56" fill="#E0F2FE" />
+                <ellipse cx="60" cy="54" rx="20" ry="23" fill="#4A2C1E" />
+                <path d="M39 42c0-12 8-17 21-17s21 5 21 17" fill="#140D0A" />
+                <!-- Glasses -->
+                <circle cx="51" cy="53" r="6" fill="none" stroke="#1B1464" stroke-width="2" />
+                <circle cx="69" cy="53" r="6" fill="none" stroke="#1B1464" stroke-width="2" />
+                <path d="M57 53h6" stroke="#1B1464" stroke-width="2" />
+                <path d="M53 65q7 5 14 0" stroke="#fff" stroke-width="2.5" fill="none" stroke-linecap="round" />
+                <path d="M22 110c0-20 16-30 38-30s38 10 38 30z" fill="#2A2185" />
+              </svg>
+            </div>
+            <h3 class="team-name">Solomon Ilori</h3>
+            <span class="team-role">Group Head, Solutions</span>
+          </div>
+
+          <!-- Member 4 -->
+          <div class="team-card">
+            <div class="team-avatar-wrap">
+              <svg viewBox="0 0 120 120">
+                <circle cx="60" cy="60" r="56" fill="#EFF6FF" />
+                <ellipse cx="60" cy="54" rx="20" ry="23" fill="#7D5238" />
+                <circle cx="60" cy="40" r="26" fill="#140D0A" />
+                <circle cx="52" cy="52" r="2.5" fill="#fff" />
+                <circle cx="68" cy="52" r="2.5" fill="#fff" />
+                <path d="M53 65q7 5 14 0" stroke="#fff" stroke-width="2.5" fill="none" stroke-linecap="round" />
+                <path d="M22 110c0-20 16-30 38-30s38 10 38 30z" fill="#2563EB" />
+              </svg>
+            </div>
+            <h3 class="team-name">Oghenekaro Okporua</h3>
+            <span class="team-role">Operations Manager</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         DEPARTMENT TEAM DIRECTORY
+         ========================================================================== -->
+    <section class="section section-light">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Our Multidisciplinary Team</h2>
+          <div class="section-divider"></div>
+          <p class="section-desc">Select a department to explore the people engineering our products in Ikeja GRA.</p>
+        </div>
+
+        <!-- Department Tabs -->
+        <div class="product-filters">
+          <button class="filter-btn dept-filter-btn active" data-dept="all">All Departments</button>
+          <button class="filter-btn dept-filter-btn" data-dept="appdev">Application Development</button>
+          <button class="filter-btn dept-filter-btn" data-dept="strategy">Corporate Strategy</button>
+          <button class="filter-btn dept-filter-btn" data-dept="innovation">Digital Innovation</button>
+          <button class="filter-btn dept-filter-btn" data-dept="sales">Sales &amp; Business Dev</button>
+        </div>
+
+        <!-- Members Grid -->
+        <div class="dept-team-grid">
+          <!-- Member -->
+          <div class="member-card" data-dept="appdev">
+            <div class="member-avatar">
+              <svg viewBox="0 0 120 120">
+                <circle cx="60" cy="60" r="56" fill="#EFF6FF" />
+                <ellipse cx="60" cy="54" rx="20" ry="23" fill="#4A2C1E" />
+                <circle cx="51" cy="53" r="6" fill="none" stroke="#1B1464" stroke-width="2" />
+                <circle cx="69" cy="53" r="6" fill="none" stroke="#1B1464" stroke-width="2" />
+                <path d="M57 53h6" stroke="#1B1464" stroke-width="2" />
+                <path d="M22 110c0-20 16-30 38-30s38 10 38 30z" fill="#1B1464" />
+              </svg>
+            </div>
+            <h4 style="font-size:1rem; font-weight:700; color:var(--color-navy)">Aliu Adedigba</h4>
+            <p style="font-size:0.75rem; color:var(--color-cobalt); font-weight:600">App Dev · Team Lead</p>
+            <span
+              style="display:inline-block; margin-top:0.35rem; font-size:0.7rem; background:#F1F5F9; color:#475569; padding:0.2rem 0.5rem; border-radius:9999px">Application
+              Development</span>
+          </div>
+
+          <!-- Member -->
+          <div class="member-card" data-dept="appdev">
+            <div class="member-avatar">
+              <svg viewBox="0 0 120 120">
+                <circle cx="60" cy="60" r="56" fill="#E0F2FE" />
+                <path d="M38 42c2-12 12-16 22-16s20 4 22 16" fill="#140D0A" />
+                <ellipse cx="60" cy="54" rx="20" ry="23" fill="#5C3A2A" />
+                <path d="M22 110c0-20 16-30 38-30s38 10 38 30z" fill="#2563EB" />
+              </svg>
+            </div>
+            <h4 style="font-size:1rem; font-weight:700; color:var(--color-navy)">Taiye Kadiri</h4>
+            <p style="font-size:0.75rem; color:var(--color-cobalt); font-weight:600">Web Developer</p>
+            <span
+              style="display:inline-block; margin-top:0.35rem; font-size:0.7rem; background:#F1F5F9; color:#475569; padding:0.2rem 0.5rem; border-radius:9999px">Application
+              Development</span>
+          </div>
+
+          <!-- Member -->
+          <div class="member-card" data-dept="appdev">
+            <div class="member-avatar">
+              <svg viewBox="0 0 120 120">
+                <circle cx="60" cy="60" r="56" fill="#FEF9C3" />
+                <ellipse cx="60" cy="54" rx="20" ry="23" fill="#6F4530" />
+                <circle cx="52" cy="52" r="2.5" fill="#fff" />
+                <circle cx="68" cy="52" r="2.5" fill="#fff" />
+                <path d="M22 110c0-20 16-30 38-30s38 10 38 30z" fill="#2A2185" />
+              </svg>
+            </div>
+            <h4 style="font-size:1rem; font-weight:700; color:var(--color-navy)">Seun Odufisan</h4>
+            <p style="font-size:0.75rem; color:var(--color-cobalt); font-weight:600">ML / AI Engineer</p>
+            <span
+              style="display:inline-block; margin-top:0.35rem; font-size:0.7rem; background:#F1F5F9; color:#475569; padding:0.2rem 0.5rem; border-radius:9999px">Application
+              Development</span>
+          </div>
+
+          <!-- Member -->
+          <div class="member-card" data-dept="appdev">
+            <div class="member-avatar">
+              <svg viewBox="0 0 120 120">
+                <circle cx="60" cy="60" r="56" fill="#BAE6FD" />
+                <circle cx="60" cy="40" r="26" fill="#140D0A" />
+                <ellipse cx="60" cy="54" rx="20" ry="23" fill="#3B2219" />
+                <path d="M22 110c0-20 16-30 38-30s38 10 38 30z" fill="#1B1464" />
+              </svg>
+            </div>
+            <h4 style="font-size:1rem; font-weight:700; color:var(--color-navy)">Emujede Hilary</h4>
+            <p style="font-size:0.75rem; color:var(--color-cobalt); font-weight:600">Web Developer</p>
+            <span
+              style="display:inline-block; margin-top:0.35rem; font-size:0.7rem; background:#F1F5F9; color:#475569; padding:0.2rem 0.5rem; border-radius:9999px">Application
+              Development</span>
+          </div>
+
+          <!-- Member -->
+          <div class="member-card" data-dept="appdev">
+            <div class="member-avatar">
+              <svg viewBox="0 0 120 120">
+                <circle cx="60" cy="60" r="56" fill="#EFF6FF" />
+                <circle cx="60" cy="40" r="26" fill="#140D0A" />
+                <ellipse cx="60" cy="54" rx="20" ry="23" fill="#7D5238" />
+                <path d="M22 110c0-20 16-30 38-30s38 10 38 30z" fill="#2563EB" />
+              </svg>
+            </div>
+            <h4 style="font-size:1rem; font-weight:700; color:var(--color-navy)">Abisola Dawodu</h4>
+            <p style="font-size:0.75rem; color:var(--color-cobalt); font-weight:600">Product Designer</p>
+            <span
+              style="display:inline-block; margin-top:0.35rem; font-size:0.7rem; background:#F1F5F9; color:#475569; padding:0.2rem 0.5rem; border-radius:9999px">Application
+              Development</span>
+          </div>
+
+          <!-- Member -->
+          <div class="member-card" data-dept="strategy">
+            <div class="member-avatar">
+              <svg viewBox="0 0 120 120">
+                <circle cx="60" cy="60" r="56" fill="#E0F2FE" />
+                <circle cx="60" cy="18" r="10" fill="#140D0A" />
+                <ellipse cx="60" cy="54" rx="20" ry="23" fill="#4A2C1E" />
+                <path d="M22 110c0-20 16-30 38-30s38 10 38 30z" fill="#2A2185" />
+              </svg>
+            </div>
+            <h4 style="font-size:1rem; font-weight:700; color:var(--color-navy)">Olaoluwa Oluwadun</h4>
+            <p style="font-size:0.75rem; color:var(--color-cobalt); font-weight:600">Project Manager</p>
+            <span
+              style="display:inline-block; margin-top:0.35rem; font-size:0.7rem; background:#F1F5F9; color:#475569; padding:0.2rem 0.5rem; border-radius:9999px">Corporate
+              Strategy</span>
+          </div>
+
+          <!-- Member -->
+          <div class="member-card" data-dept="innovation">
+            <div class="member-avatar">
+              <svg viewBox="0 0 120 120">
+                <circle cx="60" cy="60" r="56" fill="#FEF9C3" />
+                <ellipse cx="60" cy="54" rx="20" ry="23" fill="#5C3A2A" />
+                <circle cx="51" cy="53" r="6" fill="none" stroke="#1B1464" stroke-width="2" />
+                <circle cx="69" cy="53" r="6" fill="none" stroke="#1B1464" stroke-width="2" />
+                <path d="M57 53h6" stroke="#1B1464" stroke-width="2" />
+                <path d="M22 110c0-20 16-30 38-30s38 10 38 30z" fill="#1B1464" />
+              </svg>
+            </div>
+            <h4 style="font-size:1rem; font-weight:700; color:var(--color-navy)">Abraham Udoh</h4>
+            <p style="font-size:0.75rem; color:var(--color-cobalt); font-weight:600">Innovation Team Lead</p>
+            <span
+              style="display:inline-block; margin-top:0.35rem; font-size:0.7rem; background:#F1F5F9; color:#475569; padding:0.2rem 0.5rem; border-radius:9999px">Digital
+              Innovation</span>
+          </div>
+
+          <!-- Member -->
+          <div class="member-card" data-dept="sales">
+            <div class="member-avatar">
+              <svg viewBox="0 0 120 120">
+                <circle cx="60" cy="60" r="56" fill="#BAE6FD" />
+                <path d="M34 44c-2-12 6-24 20-26 4-6 14-8 20-2 10 2 16 12 12 28-4-8-10-12-16-12H50c-8 0-13 4-16 12z"
+                  fill="#FDE047" />
+                <ellipse cx="60" cy="54" rx="20" ry="23" fill="#6F4530" />
+                <path d="M22 110c0-20 16-30 38-30s38 10 38 30z" fill="#2563EB" />
+              </svg>
+            </div>
+            <h4 style="font-size:1rem; font-weight:700; color:var(--color-navy)">Oyindamola Salami</h4>
+            <p style="font-size:0.75rem; color:var(--color-cobalt); font-weight:600">Sales Executive</p>
+            <span
+              style="display:inline-block; margin-top:0.35rem; font-size:0.7rem; background:#F1F5F9; color:#475569; padding:0.2rem 0.5rem; border-radius:9999px">Sales
+              &amp; Business Dev</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       SITE FOOTER
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="footer-brand-logo-wrap" aria-label="Chronicles Software Development Company Home">
+            <img src="images/logo.png" alt="Chronicles Software Development Company" />
+          </a>
+          <p>
+            Lifting educational outcomes across Nigeria with offline-ready hardware tablets, smart CBT testing engines,
+            and custom software engineering.
+          </p>
+          <a href="contact.html" class="btn btn-primary btn-arrow" style="padding:0.75rem 1.35rem; font-size:0.85rem">
+            Get in Touch <span class="arrow">→</span>
+          </a>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html" class="footer-link">Home</a></li>
+            <li><a href="index.html#flagship-products" class="footer-link">Products &amp; Solutions</a></li>
+            <li><a href="about.html" class="footer-link">About Our Company</a></li>
+            <li><a href="contact.html" class="footer-link">Contact &amp; Support</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Reach Us in Lagos</h4>
+          <ul class="footer-contact-list">
+            <li><strong>Headquarters:</strong> 19, Joel Ogunnaike Street, Ikeja GRA, Lagos, Nigeria</li>
+            <li><strong>Email:</strong> <a href="mailto:solutions@chroniclessoft.com"
+                style="color:var(--color-cobalt); font-weight:600">solutions@chroniclessoft.com</a></li>
+            <li><strong>Phone:</strong> +234 803 769 9362</li>
+            <li><strong>Direct Line:</strong> +234 907 346 9391</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom-bar">
+        <p>© 2026 Chronicles Software Development Company Limited. All rights reserved.</p>
+        <p>19, Joel Ogunnaike Street, Ikeja GRA, Lagos State, Nigeria</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+
+  <!-- ==========================================================================
+       SITE-WIDE SEARCH MODAL (SEARCH WHOLE WEBSITE)
+       ========================================================================== -->
+  <div id="siteSearchModal" class="site-search-modal" role="dialog" aria-modal="true" aria-label="Search Chronicles website" style="display:none;">
+    <div class="search-modal-backdrop" id="searchBackdrop"></div>
+    <div class="search-modal-card">
+      <div class="search-input-wrapper">
+        <svg class="search-icon-input" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+        <input type="search" id="siteSearchInput" class="search-input" placeholder="Search products, hardware, academy, solutions, guides..." autocomplete="off" spellcheck="false" />
+        <button type="button" class="search-close-btn" id="btnSearchClose" aria-label="Close search">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+      </div>
+
+      <div class="search-body">
+        <!-- Quick Tag Suggestions when empty -->
+        <div id="searchSuggestions" class="search-suggestions">
+          <div class="search-section-label">Popular Searches</div>
+          <div class="search-tags-row">
+            <button type="button" class="search-tag-chip" data-query="SuccessBox">SuccessBox</button>
+            <button type="button" class="search-tag-chip" data-query="SuccessTAB">SuccessTAB</button>
+            <button type="button" class="search-tag-chip" data-query="ClassBeam">ClassBeam</button>
+          </div>
+        </div>
+
+        <!-- Dynamic Results List -->
+        <div id="searchResultsList" class="search-results-list" role="listbox"></div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>

@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Products &amp; Solutions | Chronicles SDC</title>
+  <meta name="description" content="Explore SuccessTAB offline educational tablets, SuccessBox CBT exam apps, IGCSE Prep, and Eko Test Centre from Chronicles SDC Lagos." />
+  <link rel="icon" type="image/png" href="images/logo.png" />
+  
+  <!-- Google Fonts: Outfit (Display & Headings), Plus Jakarta Sans (Body & UI), Caveat (Handwritten) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet" />
+
+  <!-- Pure CSS Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Schema.org Structured Data (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Chronicles Software Development Company",
+    "alternateName": "Chronicles SDC",
+    "url": "https://chroniclessoft.com",
+    "logo": "https://chroniclessoft.com/images/logo.png",
+    "description": "Africa's premier educational technology and software engineering company, makers of SuccessTAB, SuccessBox, ClassBeam, and AI Academy.",
+    "foundingLocation": "Lagos, Nigeria",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "19, Joel Ogunnaike Street, Ikeja GRA",
+      "addressLocality": "Ikeja",
+      "addressRegion": "Lagos",
+      "addressCountry": "NG"
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+234-803-769-9362",
+      "contactType": "customer support",
+      "email": "solutions@chroniclessoft.com",
+      "availableLanguage": ["English"]
+    },
+    "sameAs": [
+      "https://successbox.net",
+      "https://successtabs.com",
+      "https://classbeam.com",
+      "https://aiacademy.ng"
+    ]
+  }
+  </script>
+
+</head>
+<body>
+
+  <!-- ==========================================================================
+       SVG DOODLE SYMBOLS
+       ========================================================================== -->
+  <svg width="0" height="0" style="position:absolute; display:none;" aria-hidden="true">
+    <defs>
+      <!-- Double Handwritten Arrow matching user's uploaded reference image -->
+      <g id="doodle-double-arrow">
+        <path d="M 12 44 C 13 32, 17 20, 26 9" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M 13 18 L 26 8 L 35 19" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M 18 36 C 26 35, 36 31, 46 25" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M 37 19 L 47 24 L 39 33" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+      </g>
+      <g id="doodle-star">
+        <path d="M 24 4 C 24 16, 26 24, 38 24 C 26 24, 24 32, 24 44 C 24 32, 22 24, 10 24 C 22 24, 24 16, 24 4 Z" fill="currentColor"/>
+      </g>
+      <g id="doodle-bulb">
+        <path d="M 18 34 C 14 29, 11 23, 11 16 C 11 7, 18 2, 27 2 C 36 2, 43 7, 43 16 C 43 23, 40 29, 36 34 L 36 40 L 18 40 Z" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M 20 44 L 34 44 M 23 48 L 31 48" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round"/>
+        <path d="M 27 12 L 27 24 M 22 18 L 32 18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+      </g>
+      <g id="icon-book">
+        <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </g>
+    </defs>
+  </svg>
+
+  <!-- ==========================================================================
+       SITE HEADER / NAVBAR
+       ========================================================================== -->
+  <header class="site-header">
+    <div class="container">
+      <div class="header-inner">
+        <a href="index.html" class="brand-logo-link" aria-label="Chronicles Software Development Company Home">
+          <img src="images/logo.png" alt="Chronicles Software Development Company" class="brand-logo-img" />
+        </a>
+
+        <nav class="main-nav" aria-label="Main Navigation">
+          <a href="index.html" class="nav-link">Home</a>
+
+          <!-- Products Mega Dropdown (Exact NVIDIA Sidebar Layout) -->
+          <div class="nav-item-dropdown" id="productsDropdownWrap">
+            <a href="/products" class="nav-link nav-dropdown-btn active" id="btnProductsDropdown" role="button" aria-expanded="false" aria-haspopup="true">
+              Products
+              <svg class="nav-chevron" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </a>
+            <div class="products-mega-menu" id="productsMegaMenu" role="menu" aria-label="Products Menu">
+              <div class="mega-menu-container">
+
+                <!-- Left Sidebar Categories (NVIDIA Exact Layout) -->
+                <nav class="mega-sidebar" aria-label="Product Categories">
+                  <button type="button" class="mega-sidebar-btn active" data-tab="tab-software">
+                    Software
+                  </button>
+                  <button type="button" class="mega-sidebar-btn" data-tab="tab-hardware">
+                    Hardware
+                  </button>
+                  <button type="button" class="mega-sidebar-btn" data-tab="tab-academy">
+                    Academy
+                  </button>
+                  <button type="button" class="mega-sidebar-btn" data-tab="tab-enterprise">
+                    Enterprise Solutions
+                  </button>
+                </nav>
+
+                <!-- Right Content Area (2-Column Grid as in Screenshot) -->
+                <div class="mega-content-area">
+
+                  <!-- 1. SOFTWARE PANEL -->
+                  <div class="mega-tab-panel active" id="tab-software">
+                    <h3 class="mega-panel-title">Software</h3>
+                    <div class="mega-product-grid">
+                      <a href="https://successbox.net" target="_blank" rel="noopener noreferrer" class="mega-product-card">
+                        <div class="mega-product-card-title">
+                          <span>SuccessBox</span>
+                          <svg class="product-arrow" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                        </div>
+                        <p class="mega-product-card-desc">50,000+ past questions &amp; mock exam engine for WAEC, JAMB &amp; BECE candidates</p>
+                      </a>
+
+                      <a href="https://igcsemasterprep.com" target="_blank" rel="noopener noreferrer" class="mega-product-card">
+                        <div class="mega-product-card-title">
+                          <span>IGCSE Master Prep</span>
+                          <svg class="product-arrow" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                        </div>
+                        <p class="mega-product-card-desc">Cambridge curriculum practice, mock tests, and diagnostic analytics</p>
+                      </a>
+
+                      <a href="https://ekotestcentre.com" target="_blank" rel="noopener noreferrer" class="mega-product-card">
+                        <div class="mega-product-card-title">
+                          <span>Eko Test Centre</span>
+                          <svg class="product-arrow" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                        </div>
+                        <p class="mega-product-card-desc">WAEC outcome predictive modeling and secondary school assessment engine</p>
+                      </a>
+
+                      <a href="https://successbox.net/enterprise" target="_blank" rel="noopener noreferrer" class="mega-product-card">
+                        <div class="mega-product-card-title">
+                          <span>SuccessBox Enterprise</span>
+                          <svg class="product-arrow" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                        </div>
+                        <p class="mega-product-card-desc">All-in-one school learning platform, digital syllabus bank, and teacher LMS</p>
+                      </a>
+                    </div>
+                  </div>
+
+                  <!-- 2. HARDWARE PANEL -->
+                  <div class="mega-tab-panel" id="tab-hardware">
+                    <h3 class="mega-panel-title">Hardware</h3>
+                    <div class="mega-product-grid">
+                      <a href="https://successtabs.com" target="_blank" rel="noopener noreferrer" class="mega-product-card">
+                        <div class="mega-product-card-title">
+                          <span>SuccessTAB</span>
+                          <svg class="product-arrow" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                        </div>
+                        <p class="mega-product-card-desc">100% offline educational tablet preloaded with NERDC textbooks and video lessons</p>
+                      </a>
+
+                      <a href="https://classbeam.com" target="_blank" rel="noopener noreferrer" class="mega-product-card">
+                        <div class="mega-product-card-title">
+                          <span>ClassBeam</span>
+                          <svg class="product-arrow" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                        </div>
+                        <p class="mega-product-card-desc">Smart interactive classroom projector for dynamic multimedia collaboration</p>
+                      </a>
+                    </div>
+                  </div>
+
+                  <!-- 3. ACADEMY PANEL -->
+                  <div class="mega-tab-panel" id="tab-academy">
+                    <h3 class="mega-panel-title">Academy</h3>
+                    <div class="mega-product-grid">
+                      <a href="https://aiacademy.ng" target="_blank" rel="noopener noreferrer" class="mega-product-card">
+                        <div class="mega-product-card-title">
+                          <span>AI Academy</span>
+                          <svg class="product-arrow" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                        </div>
+                        <p class="mega-product-card-desc">Applied AI literacy, Python programming, and robotics labs for students</p>
+                      </a>
+
+                      <a href="https://educatorstechacademy.com" target="_blank" rel="noopener noreferrer" class="mega-product-card">
+                        <div class="mega-product-card-title">
+                          <span>Educators Tech Academy</span>
+                          <svg class="product-arrow" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                        </div>
+                        <p class="mega-product-card-desc">Digital pedagogy, modern classroom tech certification, and teacher upskilling</p>
+                      </a>
+                    </div>
+                  </div>
+
+                  <!-- 4. ENTERPRISE PANEL -->
+                  <div class="mega-tab-panel" id="tab-enterprise">
+                    <h3 class="mega-panel-title">Enterprise Solutions</h3>
+                    <div class="mega-product-grid">
+                      <a href="about.html" class="mega-product-card">
+                        <div class="mega-product-card-title">
+                          <span>Custom Software Engineering</span>
+                          <svg class="product-arrow" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                        </div>
+                        <p class="mega-product-card-desc">Bespoke web, mobile, and cloud platforms engineered for growing organizations</p>
+                      </a>
+
+                      <a href="contact.html" class="mega-product-card">
+                        <div class="mega-product-card-title">
+                          <span>School CBT Center Setup</span>
+                          <svg class="product-arrow" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                        </div>
+                        <p class="mega-product-card-desc">Turnkey digital examination infrastructure, local servers, and test lab deployment</p>
+                      </a>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+
+          <a href="about.html" class="nav-link">About Us</a>
+        </nav>
+
+                <!-- Header Actions: Search Button, Contact Link & Direct Explore Link -->
+        <div class="header-actions">
+          <!-- Search Icon Button -->
+          <button type="button" class="nav-search-btn" id="btnSiteSearch" aria-label="Search website" title="Search website (Ctrl + K)">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+            <span class="search-kbd-hint"><kbd>⌘</kbd><kbd>K</kbd></span>
+          </button>
+
+          <!-- Contact Link (Replaces Support dropdown) -->
+          <a href="contact.html" class="nav-contact-link">Contact</a>
+
+          <!-- Explore Button (Direct link to Our Products section, no chevron) -->
+          <a href="index.html#flagship-products" class="btn btn-primary btn-explore-nav">Explore</a>
+
+          <!-- Mobile Toggle Hamburger -->
+          <button id="mobileNavToggle" class="mobile-nav-toggle" aria-label="Toggle Navigation Menu">
+            <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div id="mobileNavMenu" class="mobile-nav-menu">
+      <a href="index.html" class="mobile-nav-link">Home</a>
+
+      <!-- Mobile Products Collapsible -->
+      <button class="mobile-dropdown-btn" id="mobileProductsToggle" aria-expanded="false">
+        <span>Products</span>
+        <svg class="nav-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+          <polyline points="6 9 12 15 18 9"></polyline>
+        </svg>
+      </button>
+      <div class="mobile-mega-panel" id="mobileMegaPanel">
+        <div class="mobile-mega-cat">Software</div>
+        <a href="https://successbox.net" target="_blank" rel="noopener noreferrer" class="mobile-mega-link">SuccessBox (Exam Prep) ↗</a>
+        <a href="https://igcsemasterprep.com" target="_blank" rel="noopener noreferrer" class="mobile-mega-link">IGCSE Master Prep ↗</a>
+        <a href="https://ekotestcentre.com" target="_blank" rel="noopener noreferrer" class="mobile-mega-link">Eko Test Centre ↗</a>
+        <a href="https://successbox.net/enterprise" target="_blank" rel="noopener noreferrer" class="mobile-mega-link">SuccessBox Enterprise ↗</a>
+
+        <div class="mobile-mega-cat">Hardware</div>
+        <a href="https://successtabs.com" target="_blank" rel="noopener noreferrer" class="mobile-mega-link">SuccessTAB (Offline Tablet) ↗</a>
+        <a href="https://classbeam.com" target="_blank" rel="noopener noreferrer" class="mobile-mega-link">ClassBeam (Projector) ↗</a>
+
+        <div class="mobile-mega-cat">Academy</div>
+        <a href="https://aiacademy.ng" target="_blank" rel="noopener noreferrer" class="mobile-mega-link">AI Academy ↗</a>
+        <a href="https://educatorstechacademy.com" target="_blank" rel="noopener noreferrer" class="mobile-mega-link">Educators Tech Academy ↗</a>
+      </div>
+
+      <a href="about.html" class="mobile-nav-link">About Us</a>
+      <a href="contact.html" class="mobile-nav-link">Contact</a>
+      <a href="index.html#flagship-products" class="mobile-nav-link">Explore Products</a>
+    </div>
+  </header>
+
+  <!-- Dropdown Dimmed Background Backdrop -->
+  <div id="dropdownBackdrop" class="dropdown-backdrop" aria-hidden="true"></div>
+
+  <main>
+    <!-- ==========================================================================
+         PAGE HERO (CURVED)
+         ========================================================================== -->
+    <section class="curved-page-hero">
+      <!-- Handwritten Doodles -->
+      <div class="doodle-box" style="top: 30px; left: 8%; color: var(--color-marker-yellow);">
+        <svg width="34" height="34" viewBox="0 0 48 48"><use href="#doodle-star"/></svg>
+      </div>
+      <div class="doodle-box" style="top: 40px; right: 10%; color: var(--color-cobalt);">
+        <svg width="36" height="36" viewBox="0 0 48 48"><use href="#doodle-bulb"/></svg>
+      </div>
+
+      <div class="container" style="max-width: 50rem;">
+        <span class="pill-badge yellow" style="margin-bottom: 0.75rem;">
+          The Chronicles Product Suite
+        </span>
+        <h1 class="hero-title">
+          Educational Products for<br />
+          <span class="typing-pill-badge"><span class="typed-word" id="productsTypedBadge" data-typewriter-words='["Exceptional", "Exemplar", "Outstanding", "Extraordinary", "Proven"]'>Exceptional</span><span class="typing-cursor">|</span></span> Results
+        </h1>
+        <p style="font-size: 1.15rem; color: var(--color-text-slate); line-height: 1.7; margin-bottom: 1.5rem">
+          Hardware and software solutions trusted by students, parents, teachers, and school heads to turn daily study into confident exam mastery.
+        </p>
+
+        <!-- Handwritten Annotation -->
+        <div style="display: inline-flex; align-items: center; gap: 0.75rem;">
+          <svg class="handwritten-double-arrow" viewBox="0 0 60 50"><use href="#doodle-double-arrow"/></svg>
+          <span class="handwritten-annotation navy">
+            Syllabus-aligned · Loved by 10M+ users!
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         PRODUCT CATALOGUE WITH INTERACTIVE FILTERING
+         ========================================================================== -->
+    <section class="section section-light">
+      <div class="container">
+
+        <!-- Filter Pills -->
+        <div class="product-filters">
+          <button class="filter-btn product-filter-btn active" data-filter="all">All Solutions</button>
+          <button class="filter-btn product-filter-btn" data-filter="software">Software</button>
+          <button class="filter-btn product-filter-btn" data-filter="hardware">Hardware</button>
+          <button class="filter-btn product-filter-btn" data-filter="academy">Academy</button>
+        </div>
+
+        <!-- Products Grid -->
+        <div class="products-grid-detailed">
+
+          <!-- 1. SuccessTAB (Hardware) -->
+          <article id="prod-successtab" class="product-detail-card" data-category="all hardware">
+            <div>
+              <div class="product-badge-row">
+                <span class="pill-badge navy">Flagship Hardware</span>
+                <span class="tag-badge">100% Offline</span>
+              </div>
+              <h2 class="product-title" style="font-size: 2rem;">SuccessTAB</h2>
+              <p class="product-desc">
+                <strong>SuccessTAB</strong> is a dedicated educational tablet engineered for <strong>100% offline digital learning</strong>. Arriving pre-configured with complete, approved NERDC curriculum e-textbooks, interactive video lessons, and mock exam engines, it frees parents from repeating book fees and protects students from network blackouts.
+              </p>
+
+              <div class="feature-pill-list">
+                <span class="feature-pill">✓ No Internet or Data Required</span>
+                <span class="feature-pill">✓ Pre-loaded NERDC Syllabi</span>
+                <span class="feature-pill">✓ Multi-Year Textbook Savings</span>
+                <span class="feature-pill">✓ Safe &amp; Distraction-Free OS</span>
+                <span class="feature-pill">✓ All-Day Battery Endurance</span>
+              </div>
+            </div>
+
+            <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center; margin-top:1.5rem">
+              <button data-demo="SuccessTAB Educational Tablet Quote" class="btn btn-primary btn-arrow">
+                Request School Quote <span class="arrow">→</span>
+              </button>
+              <button data-demo="SuccessTAB Spec Sheet" class="btn btn-secondary">
+                View Specifications
+              </button>
+            </div>
+          </article>
+
+          <!-- 2. ClassBeam (Hardware) -->
+          <article id="prod-classbeam" class="product-detail-card" data-category="all hardware">
+            <div>
+              <div class="product-badge-row">
+                <span class="pill-badge blue">Classroom Hardware</span>
+                <span class="tag-badge">Smart Projection</span>
+              </div>
+              <h2 class="product-title" style="font-size: 2rem;">ClassBeam</h2>
+              <p class="product-desc">
+                <strong>ClassBeam</strong> is a smart interactive classroom projection device designed for multimedia lesson delivery. Featuring instant wireless screen casting from teacher tablets, ultra-clear display in lit classrooms, and durable swivel hardware built for African educational environments.
+              </p>
+
+              <div class="feature-pill-list">
+                <span class="feature-pill">✓ Instant Tablet &amp; PC Wireless Casting</span>
+                <span class="feature-pill">✓ High-Lumen Clarity in Bright Daylight</span>
+                <span class="feature-pill">✓ Integrated Audio Speaker Chamber</span>
+                <span class="feature-pill">✓ 360° Multi-Angle Swivel Stand</span>
+                <span class="feature-pill">✓ Low-Power Energy Efficient Design</span>
+              </div>
+            </div>
+
+            <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center; margin-top:1.5rem">
+              <button data-demo="ClassBeam Classroom Deployment Quote" class="btn btn-primary btn-arrow">
+                Request ClassBeam Demo <span class="arrow">→</span>
+              </button>
+              <button data-demo="ClassBeam Hardware Specs" class="btn btn-secondary">
+                Hardware Specifications
+              </button>
+            </div>
+          </article>
+
+          <!-- 3. SuccessBox (Software) -->
+          <article id="prod-successbox" class="product-detail-card" data-category="all software">
+            <div>
+              <div class="product-badge-row">
+                <span class="pill-badge blue">Mobile App &amp; Web</span>
+                <span class="tag-badge">JSS1 – SS3 Exam Prep</span>
+              </div>
+              <h2 class="product-title" style="font-size: 2rem;">SuccessBox</h2>
+              <p class="product-desc">
+                Nigeria's premier Computer-Based Testing (CBT) and exam preparation suite for students taking <strong>JAMB UTME, WAEC, BECE, and NECO</strong>. Packing over <strong>45 approved subjects</strong>, 120 digital textbooks, and a verified bank of <strong>50,000+ past questions</strong> with step-by-step worked solutions.
+              </p>
+
+              <div class="feature-pill-list">
+                <span class="feature-pill">✓ 50,000+ Verified CBT Questions</span>
+                <span class="feature-pill">✓ 45+ NERDC Secondary Subjects</span>
+                <span class="feature-pill">✓ Real-time Timed Mock Mode</span>
+                <span class="feature-pill">✓ Topic Performance Analytics</span>
+                <span class="feature-pill">✓ Works On Phones, Tablets &amp; Laptops</span>
+              </div>
+            </div>
+
+            <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center; margin-top:1.5rem">
+              <button data-demo="SuccessBox Student License" class="btn btn-primary btn-arrow">
+                Get SuccessBox Now <span class="arrow">→</span>
+              </button>
+              <button data-demo="SuccessBox School Bulk Access" class="btn btn-secondary">
+                Bulk School Access
+              </button>
+            </div>
+          </article>
+
+          <!-- 4. IGCSE Master Prep (Software) -->
+          <article id="prod-igcse" class="product-detail-card" data-category="all software">
+            <div>
+              <div class="product-badge-row">
+                <span class="pill-badge navy">International Curriculum</span>
+                <span class="tag-badge">Cambridge Standards</span>
+              </div>
+              <h2 class="product-title" style="font-size: 2rem;">IGCSE Master Prep</h2>
+              <p class="product-desc">
+                Tailored for students sitting British and International GCSE examinations. Offers targeted diagnostic practice, topic-by-topic drill modules, past papers with mark schemes, and instant performance benchmarking so students master high-yield topics first.
+              </p>
+
+              <div class="feature-pill-list">
+                <span class="feature-pill">✓ Complete Cambridge Subject Coverage</span>
+                <span class="feature-pill">✓ Examiner Mark Schemes &amp; Tips</span>
+                <span class="feature-pill">✓ Instant Weak-Area Diagnostics</span>
+                <span class="feature-pill">✓ Periodic Simulated Mock Papers</span>
+              </div>
+            </div>
+
+            <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center; margin-top:1.5rem">
+              <button data-demo="IGCSE Master Prep Subscription" class="btn btn-primary btn-arrow">
+                Start IGCSE Practice <span class="arrow">→</span>
+              </button>
+            </div>
+          </article>
+
+          <!-- 5. Eko Test Centre (Software) -->
+          <article id="prod-ekotest" class="product-detail-card" data-category="all software">
+            <div>
+              <div class="product-badge-row">
+                <span class="pill-badge blue">State &amp; School Enterprise</span>
+                <span class="tag-badge">WAEC Forecasting</span>
+              </div>
+              <h2 class="product-title" style="font-size: 2rem;">Eko Test Centre</h2>
+              <p class="product-desc">
+                Commissioned and deployed across Lagos State secondary schools, <strong>Eko Test Centre</strong> is a centralized assessment and analytics portal. It allows teachers to build custom exams from past WAEC repositories, track school-wide mock results, and forecast final WAEC outcomes months ahead.
+              </p>
+
+              <div class="feature-pill-list">
+                <span class="feature-pill">✓ WAEC Outcome Predictive Modeling</span>
+                <span class="feature-pill">✓ Rapid Test Creator &amp; Scheduler</span>
+                <span class="feature-pill">✓ Ministry &amp; School District Dashboards</span>
+                <span class="feature-pill">✓ Early Intervention Remedial Flagging</span>
+              </div>
+            </div>
+
+            <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center; margin-top:1.5rem">
+              <button data-demo="Eko Test Centre School Deployment" class="btn btn-primary btn-arrow">
+                Request School Onboarding <span class="arrow">→</span>
+              </button>
+            </div>
+          </article>
+
+          <!-- 6. SuccessBox Enterprise (Software) -->
+          <article id="prod-successbox-enterprise" class="product-detail-card" data-category="all software">
+            <div>
+              <div class="product-badge-row">
+                <span class="pill-badge yellow">All-In-One Platform</span>
+                <span class="tag-badge">Primary &amp; Secondary</span>
+              </div>
+              <h2 class="product-title" style="font-size: 2rem;">SuccessBox Enterprise</h2>
+              <p class="product-desc">
+                One unified digital learning platform for the entire institution. Gives every student lessons calibrated to their reading pace, auto-grades continuous assessment tests to give teachers their evenings back, and equips head teachers with deep performance diagnostics.
+              </p>
+
+              <div class="feature-pill-list">
+                <span class="feature-pill">✓ Aligned to Current 2025/2026 NERDC Syllabi</span>
+                <span class="feature-pill">✓ Automated Test &amp; Quiz Self-Grading</span>
+                <span class="feature-pill">✓ Teacher Homework &amp; Attendance Manager</span>
+                <span class="feature-pill">✓ Head Teacher Cross-Grade Analytics</span>
+              </div>
+            </div>
+
+            <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center; margin-top:1.5rem">
+              <button data-demo="SuccessBox Enterprise School Onboarding" class="btn btn-primary btn-arrow">
+                Schedule School Demo <span class="arrow">→</span>
+              </button>
+            </div>
+          </article>
+
+          <!-- 7. AI Academy (Academy) -->
+          <article id="prod-ai-academy" class="product-detail-card" data-category="all academy">
+            <div>
+              <div class="product-badge-row">
+                <span class="pill-badge green" style="background:#DCFCE7; color:#15803D">Future-Ready Skills</span>
+                <span class="tag-badge">Students &amp; Innovators</span>
+              </div>
+              <h2 class="product-title" style="font-size: 2rem;">AI Academy</h2>
+              <p class="product-desc">
+                Chronicles <strong>AI Academy</strong> equips the next generation with hands-on artificial intelligence literacy, practical Python programming, robotics labs, and machine learning fundamentals. Designed specifically to prepare African learners for global technology leadership.
+              </p>
+
+              <div class="feature-pill-list">
+                <span class="feature-pill">✓ Practical Machine Learning &amp; AI Literacy</span>
+                <span class="feature-pill">✓ Python Coding &amp; Algorithm Foundations</span>
+                <span class="feature-pill">✓ Hands-on IoT &amp; Robotics Hardware Kits</span>
+                <span class="feature-pill">✓ Project-Based Capstone Mentorship</span>
+              </div>
+            </div>
+
+            <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center; margin-top:1.5rem">
+              <button data-demo="AI Academy Cohort Registration" class="btn btn-primary btn-arrow">
+                Enroll In Academy <span class="arrow">→</span>
+              </button>
+            </div>
+          </article>
+
+          <!-- 8. Educators Tech Academy (Academy) -->
+          <article id="prod-educators-bootcamp" class="product-detail-card" data-category="all academy">
+            <div>
+              <div class="product-badge-row">
+                <span class="pill-badge navy">Teacher Professional Dev</span>
+                <span class="tag-badge">Certification</span>
+              </div>
+              <h2 class="product-title" style="font-size: 2rem;">Educators Tech Academy</h2>
+              <p class="product-desc">
+                Transformative professional development programs empowering primary and secondary school educators with 21st-century digital pedagogy, interactive smartboard mastery, CBT question bank authoring, and AI-assisted classroom tools.
+              </p>
+
+              <div class="feature-pill-list">
+                <span class="feature-pill">✓ Digital Pedagogy &amp; Blended Learning</span>
+                <span class="feature-pill">✓ Smart Hardware &amp; Interactive Board Skills</span>
+                <span class="feature-pill">✓ Data-Driven Remedial Strategy Training</span>
+                <span class="feature-pill">✓ Certified Digital Educator Credential</span>
+              </div>
+            </div>
+
+            <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center; margin-top:1.5rem">
+              <button data-demo="Educators Tech Academy School Training" class="btn btn-primary btn-arrow">
+                Book Teacher Training <span class="arrow">→</span>
+              </button>
+            </div>
+          </article>
+
+          <!-- 9. SuccessBox V2 (AI Companion - Innovation) -->
+          <article id="prod-successbox-v2" class="product-detail-card span-full" data-category="all software">
+            <div style="display:grid; grid-template-columns: 1.4fr 1fr; gap:2.5rem; align-items:center">
+              <div>
+                <div class="product-badge-row">
+                  <span class="pill-badge yellow">Next-Generation Innovation</span>
+                  <span class="tag-badge">Private Early Access</span>
+                </div>
+                <h2 class="product-title" style="font-size: 2.25rem;">SuccessBox V2 (AI Study Companion)</h2>
+                <p class="product-desc">
+                  We are building <strong>SuccessBox V2</strong> as an intelligent study companion. Combining a full digital textbook repository with an <strong>interactive step-by-step Math Solver</strong>, a <strong>conversational AI syllabus chatbot</strong>, and synchronized collaborative study spaces for students and teachers.
+                </p>
+
+                <div class="feature-pill-list">
+                  <span class="feature-pill">🤖 Step-by-Step AI Math Problem Solver</span>
+                  <span class="feature-pill">💬 24/7 Conversational Syllabus Tutor</span>
+                  <span class="feature-pill">📚 Complete Curriculum E-Textbook Library</span>
+                  <span class="feature-pill">👥 Interactive Virtual Study Rooms</span>
+                  <span class="feature-pill">📈 Adaptive Personalized Review Schedules</span>
+                </div>
+
+                <div style="margin-top: 1.75rem;">
+                  <button data-demo="SuccessBox V2 AI Early Access Waitlist" class="btn btn-primary btn-arrow" style="padding:1rem 2rem;">
+                    Join Early Access Waitlist <span class="arrow">→</span>
+                  </button>
+                </div>
+              </div>
+
+              <!-- AI Visual Graphic Box -->
+              <div style="background:white; border-radius:1.5rem; padding:1.5rem; border:1px solid var(--color-sky); box-shadow:var(--shadow-card)">
+                <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:1rem; border-bottom:1px solid var(--color-border); padding-bottom:0.75rem">
+                  <span style="font-size:1.25rem">✨</span>
+                  <strong style="color:var(--color-navy); font-size:0.95rem">Interactive Math Solver</strong>
+                </div>
+                <div style="font-family:monospace; font-size:0.85rem; background:var(--color-sky-tint); padding:0.85rem; border-radius:0.75rem; color:var(--color-navy); margin-bottom:0.75rem">
+                  Input: 3x² - 12 = 0<br>
+                  Step 1: 3x² = 12<br>
+                  Step 2: x² = 4<br>
+                  Result: x = ±2
+                </div>
+                <p style="font-size:0.8rem; color:var(--color-text-muted)">
+                  The AI explains every mathematical step clearly rather than just showing raw answers.
+                </p>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         COMPARISON MATRIX SECTION
+         ========================================================================== -->
+    <section class="section section-tint">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">How Our Solutions Compare</h2>
+          <div class="section-divider"></div>
+          <p class="section-desc">Choose the right fit for your home, classroom, or multi-campus institution.</p>
+        </div>
+
+        <div style="overflow-x:auto; background:white; border-radius:1.5rem; border:1px solid var(--color-border); box-shadow:var(--shadow-soft); padding:1.5rem">
+          <table style="width:100%; border-collapse:collapse; text-align:left; font-size:0.95rem">
+            <thead>
+              <tr style="border-bottom:2px solid var(--color-sky)">
+                <th style="padding:1rem; color:var(--color-navy); font-weight:800">Feature / Requirement</th>
+                <th style="padding:1rem; color:var(--color-navy); font-weight:800">SuccessTAB</th>
+                <th style="padding:1rem; color:var(--color-navy); font-weight:800">SuccessBox App</th>
+                <th style="padding:1rem; color:var(--color-navy); font-weight:800">Eko Test Centre</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style="border-bottom:1px solid var(--color-border)">
+                <td style="padding:1rem; font-weight:600">Internet Requirement</td>
+                <td style="padding:1rem; color:var(--color-success); font-weight:bold">Zero (100% Offline)</td>
+                <td style="padding:1rem">Offline download available</td>
+                <td style="padding:1rem">Web Connected</td>
+              </tr>
+              <tr style="border-bottom:1px solid var(--color-border)">
+                <td style="padding:1rem; font-weight:600">Form Factor</td>
+                <td style="padding:1rem">Dedicated Tablet Device</td>
+                <td style="padding:1rem">Phone, Tablet, PC App</td>
+                <td style="padding:1rem">School Web Dashboard</td>
+              </tr>
+              <tr style="border-bottom:1px solid var(--color-border)">
+                <td style="padding:1rem; font-weight:600">Target Audience</td>
+                <td style="padding:1rem">Students, Homes &amp; Schools</td>
+                <td style="padding:1rem">Exam Candidates (JSS–SS3)</td>
+                <td style="padding:1rem">Principals &amp; Teachers</td>
+              </tr>
+              <tr style="border-bottom:1px solid var(--color-border)">
+                <td style="padding:1rem; font-weight:600">CBT Questions Included</td>
+                <td style="padding:1rem">Full CBT Library Pre-loaded</td>
+                <td style="padding:1rem">50,000+ Worked Questions</td>
+                <td style="padding:1rem">Custom Question Builder</td>
+              </tr>
+              <tr>
+                <td style="padding:1rem; font-weight:600">Predictive Analytics</td>
+                <td style="padding:1rem">Personal Progress Tracker</td>
+                <td style="padding:1rem">Subject Mock Analytics</td>
+                <td style="padding:1rem; color:var(--color-cobalt); font-weight:bold">Statewide WAEC Forecasting</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         CALL TO ACTION BANNER
+         ========================================================================== -->
+    <section class="section section-light">
+      <div class="container">
+        <div class="custom-eng-banner">
+          <div class="custom-eng-grid">
+            <div>
+              <span class="pill-badge yellow" style="margin-bottom:0.75rem;">Equip Your School</span>
+              <h2>Ready to transform learning outcomes in your school?</h2>
+              <p>
+                Our educational consultants in Ikeja GRA will guide you through device demos, bulk licensing, and teacher orientation sessions.
+              </p>
+            </div>
+            <div style="display:flex; justify-content:flex-end;">
+              <a href="contact.html" class="btn btn-white btn-arrow" style="font-weight:700; padding:1rem 2rem;">
+                Speak to Our Team <span class="arrow">→</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       SITE FOOTER
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="footer-brand-logo-wrap" aria-label="Chronicles Software Development Company Home">
+            <img src="images/logo.png" alt="Chronicles Software Development Company" />
+          </a>
+          <p>
+            Lifting educational outcomes across Nigeria with offline-ready hardware tablets, smart CBT testing engines, and custom software engineering.
+          </p>
+          <a href="contact.html" class="btn btn-primary btn-arrow" style="padding:0.75rem 1.35rem; font-size:0.85rem">
+            Get in Touch <span class="arrow">→</span>
+          </a>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html" class="footer-link">Home</a></li>
+            <li><a href="index.html#flagship-products" class="footer-link">Products &amp; Solutions</a></li>
+            <li><a href="about.html" class="footer-link">About Our Company</a></li>
+            <li><a href="contact.html" class="footer-link">Contact &amp; Support</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Reach Us in Lagos</h4>
+          <ul class="footer-contact-list">
+            <li><strong>Headquarters:</strong> 19, Joel Ogunnaike Street, Ikeja GRA, Lagos, Nigeria</li>
+            <li><strong>Email:</strong> <a href="mailto:solutions@chroniclessoft.com" style="color:var(--color-cobalt); font-weight:600">solutions@chroniclessoft.com</a></li>
+            <li><strong>Phone:</strong> +234 803 769 9362</li>
+            <li><strong>Direct Line:</strong> +234 907 346 9391</li>
+          </ul>
+          <div class="footer-social-row">
+            <a href="#" class="social-btn" aria-label="LinkedIn">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9h2.79v8.37H6.46v-8.37M7.86 6.31a1.62 1.62 0 1 0 0 3.24 1.62 1.62 0 0 0 0-3.24z"/></svg>
+            </a>
+            <a href="#" class="social-btn" aria-label="Facebook">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M9 8H6v4h3v12h5V12h3.6l.4-4h-4V6.3c0-.95.2-1.3 1.1-1.3H18V0h-3.8C10.6 0 9 1.6 9 4.6z"/></svg>
+            </a>
+            <a href="#" class="social-btn" aria-label="Twitter / X">
+              <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path d="M4 4l16 16M20 4L4 20"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom-bar">
+        <p>© 2026 Chronicles Software Development Company Limited. All rights reserved.</p>
+        <p>19, Joel Ogunnaike Street, Ikeja GRA, Lagos State, Nigeria</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       DEMO / QUOTE MODAL
+       ========================================================================== -->
+  <div id="demoModal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="demoModalTitle">
+    <div class="modal-dialog">
+      <button id="demoCloseBtn" class="modal-close-btn" aria-label="Close Modal">✕</button>
+      <span class="pill-badge yellow" style="margin-bottom:0.75rem;">Chronicles Solutions Desk</span>
+      <h3 id="demoModalTitle" style="font-size:1.65rem; color:var(--color-navy); margin-bottom:0.5rem">Request a Demo</h3>
+      <p style="color:var(--color-text-slate); font-size:0.9rem; margin-bottom:1.5rem">
+        Let us know what you'd like to explore and our Lagos education team will follow up within 24 hours.
+      </p>
+
+      <form id="demoForm">
+        <div class="form-group">
+          <label class="form-label">Selected Solution</label>
+          <input type="text" id="demoSubjectInput" readonly class="form-input" style="background:var(--color-sky-tint); font-weight:700; color:var(--color-navy)" />
+        </div>
+        <div class="form-group">
+          <label for="modalName" class="form-label">Full Name / School Name *</label>
+          <input type="text" id="modalName" required placeholder="e.g. Mrs. Chioma Nwosu, Sunrise Academy" class="form-input" />
+        </div>
+        <div class="form-grid-row">
+          <div class="form-group">
+            <label for="modalEmail" class="form-label">Email Address *</label>
+            <input type="email" id="modalEmail" required placeholder="name@school.edu.ng" class="form-input" />
+          </div>
+          <div class="form-group">
+            <label for="modalPhone" class="form-label">Phone Number *</label>
+            <input type="tel" id="modalPhone" required placeholder="+234 800 000 0000" class="form-input" />
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width:100%; padding:1rem; font-size:1rem; margin-top:0.5rem">
+          Submit Request
+        </button>
+      </form>
+
+      <div id="demoSuccessBox" class="form-success-box">
+        <div style="width:3.5rem; height:3.5rem; border-radius:50%; background:#D1FAE5; color:#059669; display:flex; align-items:center; justify-content:center; margin:0 auto 1rem; font-size:1.75rem">
+          ✓
+        </div>
+        <h4 style="font-size:1.35rem; color:#065F46; margin-bottom:0.4rem">Request Successfully Received!</h4>
+        <p style="color:#047857; font-size:0.9rem;">
+          Thank you! Our Ikeja GRA team will review your requirements and reach out promptly.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+
+  <!-- ==========================================================================
+       SITE-WIDE SEARCH MODAL (SEARCH WHOLE WEBSITE)
+       ========================================================================== -->
+  <div id="siteSearchModal" class="site-search-modal" role="dialog" aria-modal="true" aria-label="Search Chronicles website" style="display:none;">
+    <div class="search-modal-backdrop" id="searchBackdrop"></div>
+    <div class="search-modal-card">
+      <div class="search-input-wrapper">
+        <svg class="search-icon-input" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+        <input type="search" id="siteSearchInput" class="search-input" placeholder="Search products, hardware, academy, solutions, guides..." autocomplete="off" spellcheck="false" />
+        <button type="button" class="search-close-btn" id="btnSearchClose" aria-label="Close search">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+      </div>
+
+      <div class="search-body">
+        <!-- Quick Tag Suggestions when empty -->
+        <div id="searchSuggestions" class="search-suggestions">
+          <div class="search-section-label">Popular Searches</div>
+          <div class="search-tags-row">
+            <button type="button" class="search-tag-chip" data-query="SuccessBox">SuccessBox</button>
+            <button type="button" class="search-tag-chip" data-query="SuccessTAB">SuccessTAB</button>
+            <button type="button" class="search-tag-chip" data-query="ClassBeam">ClassBeam</button>
+          </div>
+        </div>
+
+        <!-- Dynamic Results List -->
+        <div id="searchResultsList" class="search-results-list" role="listbox"></div>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>
