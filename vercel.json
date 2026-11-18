@@ -32,7 +32,7 @@
     }
   ],
   "rewrites": [
-    { "source": "/products", "destination": "/products/index.html" }
+    { "source": "/products", "destination": "/products.html" }
   ],
   "cleanUrls": true,
   "trailingSlash": false

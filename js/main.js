@@ -345,10 +345,9 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Automatically stay open if loaded directly on /products, products.html, or #products
-    const shouldStayOpenOnLoad = window.location.pathname.endsWith('/products') ||
-                                 window.location.pathname.endsWith('/products/') ||
-                                 window.location.pathname.endsWith('products.html') ||
-                                 window.location.hash === '#products';
+    // Do NOT auto-open mega dropdown on page load or refresh.
+    // Dropdown should only open when user clicks Products, hovers on desktop, or clicks 'View more'.
+    const shouldStayOpenOnLoad = false;
     if (shouldStayOpenOnLoad) {
       openProductsMegaMenu(false);
     }
